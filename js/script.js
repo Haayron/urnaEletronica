@@ -41,14 +41,14 @@ function votar() {
 }
 
 
-/* audio ao clicar em confirmar */
+/* audio ao clicar em confirmar 
 
 const buttonPlay = document.getElementById("btn-confirm");
 buttonPlay.addEventListener("click", function () {
     const audio = document.querySelector("audio")
     audio.play()
 })
-
+*/
 
 
 
