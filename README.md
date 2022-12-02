@@ -7,7 +7,7 @@
 <p>O material de referência utilizado para a construção da urna foram os seguintes:</p>
 <p></p>
 
-<p>https://www.youtube.com/watch?v=dPe01Qyv3PM&t=546s&ab_channel=PortalProgramando"</p>
+<p>https://www.youtube.com/watch?v=dPe01Qyv3PM&t=546s&ab_channel=PortalProgramando</p>
 <p>https://www.youtube.com/watch?v=i90aSJ7LwAI&list=PLZxv3_yrHYHUlntFBULRat7iSUtUfItol&ab_channel=MDCursos</p>
 
 <p>Imagens usadas no site:</p>
