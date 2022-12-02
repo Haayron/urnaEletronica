@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="pagina-candidatos">
+        <header>
+            <nav>
+                <a href="#" class="menu">Home</a>
+                <a href="#titulo-candidatos" class="menu">Candidatos</a>
+                <a href="#pag-cadastro" class="menu">Cadastro</a>
+                <a href="pages/resultados.html" class="menu">Resultados</a>
+            </nav>
+        </header>
+
+        <div id="titulo-candidatos">
+            <h1 id="titulo-relacao">Relação de candidatos</h1>
+        </div>
+        
+    
+        <div class="container-cards">
+            <div class="img-card setenta">
+                <img src="img/70.png">
+                <div class="titulo-candidato">
+                    <h3 class="prefeito">Prefeito</h3><br>
+                    <div class="numero-candidato">
+                        <p>70</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="img-card oitenta">
+                <img src="img/80.png">
+                <div class="titulo-candidato">
+                    <h3 class="prefeito">Prefeito</h3><br>
+                    <div class="numero-candidato">
+                        <p>80</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="img-card noventa">
+                <img src="img/90.png">
+                <div class="titulo-candidato">
+                    <h3 class="prefeito">Prefeito</h3><br>
+                    <div class="numero-candidato">
+                        <p>90</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="img-card setenta">
+                <img src="img/7070.png">
+                <div class="titulo-candidato">
+                    <h3 class="vice">Vice-Prefeito</h3><br>
+                    <div class="numero-candidato">
+                        <p>7070</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="img-card oitenta">
+                <img src="img/8080.png">
+                <div class="titulo-candidato">
+                    <h3 class="vice">Vice-Prefeito</h3><br>
+                    <div class="numero-candidato">
+                        <p>8080</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="img-card noventa">
+                <img src="img/9090.png">
+                <div class="titulo-candidato">
+                    <h3 class="vice">Vice-Prefeito</h3><br>
+                    <div class="numero-candidato">
+                        <p>9090</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+
+        <div class="container-cadastro" id="pag-cadastro">
+       
+            <h1 id="titulo-cadastro">Cadastro de Título</h1>
+
+            <form id="form-cadastro">
+                <input class="input-cadastro" type="text" placeholder="Digite o seu nome">
+                <input class="input-cadastro" type="number" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="XXX.XXX.XXX-XX">
+                <input class="input-cadastro" type="email" placeholder="nome@email.com">
+                <a id="link-pag-votacao" href="urna.html">Ir para a votação</a>
+                
+            </form>
+           
+        </div>
+    </div>
+   
+
+   
+</body>
+<script src="js/script.js"></script>
+</html>

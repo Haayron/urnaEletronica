@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Variáveis de cores */
+html {
+    --bg-header: orange;
+    --bg-display: gray;
+    --bg-logo: blue;
+    --bg-btn: yellow;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    background-color: #0C5387;
+}
+
+header{
+    background-color: #000000;
+ 
+    width: 100%;
+    height: 10vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+a{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #00b7ff; 
+}
+
+#titulo-candidatos{
+    text-align: center;
+    margin: 2rem;
+}
+
+#titulo-relacao{
+    color: #ffffff;
+    font-size: 3rem;
+    
+}
+
+/*PÁGINA INICIAL - CANDIDATOS*/
+
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 3rem;
+}
+
+.container-cards  .img-card {
+    width: calc(100% / 4);
+}
+
+.img-card{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.img-card:hover{
+    box-shadow: 5px 5px 10px #fff6ce;
+    transform: scale(1.08);
+}
+
+.prefeito{
+    background-color:#fffc40;
+    width: 50%;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.vice{
+    background-color:rgb(255, 178, 36);
+    width: 80%;
+    border-radius: 5px;
+    color: #0a0000;
+}
+
+.setenta{
+    background: linear-gradient( #2c6fff, #000000 );
+}
+
+.oitenta{
+    background: linear-gradient( #ff2cff, #000000 );
+}
+
+.noventa{
+    background: linear-gradient( #2cff5a, #000000 );
+}
+
+img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+/*PÁGINA DE CADASTRO*/
+
+.container-cadastro{
+    background-color: #08334b;
+    padding: 2rem;
+}
+
+#titulo-cadastro{
+    color: rgb(255, 196, 0);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+#form-cadastro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ 
+.input-cadastro{
+    margin: 0.5rem;
+    padding: 10px;
+    width: 30rem;
+}
+
+#link-pag-votacao{
+    margin: 0.5rem;
+    width: 20rem;
+    padding: 10px;
+    background-color: #2cff5a;
+    border: 2px solid black;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+#link-pag-votacao:hover{
+    background-color: #09d316;
+}
+
+/* PÁGINA URNAS*/
+
+.container {
+    background: linear-gradient( to top, #9da1a7, #ced9e8 );
+    max-width: 800px;
+    padding: 1.5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5rem;
+    border-radius: 5px;
+
+}
+
+
+.tela-resultados {
+    background: white;
+
+    width: 30rem;
+    height: 25rem;
+    border: 2px solid #000000;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.tela-info {
+    flex: 1;
+    display: flex;
+
+    /*flex:1 significa que essa parte da tela
+    vai o cupar o que sobrar de espaço para ela 
+    */
+}
+
+.info-left {
+    padding: 1rem;
+}
+
+.info-voto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dados-votos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.info-voto {
+    display: flex;
+    align-items: center;
+}
+
+.instrucoes {
+    height: -1rem;
+    padding: 1rem;
+    border-top: 2px solid #000;
+ 
+}
+
+.numero{
+    width: 3rem;
+    height: 2.5rem;
+}
+
+/*Animação do número piscando
+
+Arrumar com JS 
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pisca {
+    0% {
+        opacity: 0, 2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}*/
+
+.jus{
+    background-color: #000;
+    width: 100%;
+    height: 3rem;
+}
+
+#titulo-jus{
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+}
+
+
+.teclado {
+    background: linear-gradient(to bottom, #253233, #222222);
+
+
+    margin-left: 1.2rem;
+}
+
+/* .teclado--linha*/
+.teclado-trio {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* .teclado--botao*/
+.teclado-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 6rem;
+    height: 2rem;
+    padding: 1.2rem;
+    margin: 0.8rem;
+
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #000000;
+    color: white;
+
+    border-radius: 0.3rem;
+
+
+    cursor: pointer;
+}
+
+.teclado-btn:hover {
+    box-shadow: 5px 3px 10px #979797;
+}
+
+/*classes especiais para cada btn*/
+
+
+.btn-blank {
+    background-color: #ffffff;
+    color: #01000c;
+}
+
+.btn-correct {
+    background-color: #cf8700;
+    color: #01000c;
+}
+
+.btn-confirm {
+    background: rgb(1, 167, 1);
+    color: #01000c;
+    height: 4rem;
+}
+
+.btn-resultados{
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+    background-color: #032335;
+    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+}
+
+.btn-voltar{
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+    background-color: #000305;
+    
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+}
+
+#voltar{
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+    background-color: #000305;
+    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#result-btn{
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+
+    background-color: #2cff5a;
+    color: #000000;
+    font-weight: bold;
+}
+
+#result-btn:hover{
+    background-color: #09d316;
+}
+
+#resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    
+    color: white;
+}

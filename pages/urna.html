@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tela-resultados">
+             <div class="tela-info">
+                <div class="info-left">
+                    <div class="info-voto">
+                        <span>Número:</span>
+                    </div>
+                    <div class="info-dados">
+                       <form id="dados-votos">
+                            <input class="numero pisca" type="text" size="1" id="campo1" value="" maxlength="1" readonly="readonly">
+                            <input class="numero" type="text" size="1" id="campo2" value="" maxlength="1" readonly="readonly">
+                       </form>
+                    </div>
+                </div>
+         
+             </div>
+             <div class="instrucoes">
+                CONFIRMA para CONFIRMAR este voto <br>
+                CORRIGE para CORRIGIR este voto <br>
+                BRANCO para votar em BRANCO
+             </div>
+        </div>
+         
+
+        <div class="teclado">
+            <div class="botoes-numericos">
+                <div class="jus">
+                    <p id="titulo-jus">JUSTIÇA ELEITORAL</p>
+                </div>
+                <div class="teclado-trio">
+                    <button class="teclado-btn"  onclick="inserirVotos(1)">1</button>
+                    <button class="teclado-btn"  onclick="inserirVotos(2)">2</button>
+                    <button class="teclado-btn"  onclick="inserirVotos(3)">3</button>
+                </div>
+                <div class="teclado-trio">
+                    <button class="teclado-btn"  onclick="inserirVotos(4)">4</button>
+                    <button class="teclado-btn"  onclick="inserirVotos(5)">5</button>
+                    <button class="teclado-btn"  onclick="inserirVotos(6)">6</button>
+                </div>
+                <div class="teclado-trio">
+                    <button class="teclado-btn"  onclick="inserirVotos(7)">7</button>
+                    <button class="teclado-btn"  onclick="inserirVotos(8)">8</button>
+                    <button class="teclado-btn" onclick="inserirVotos(9)">9</button>
+                </div>
+                <div class="teclado-trio">
+                    <button class="teclado-btn" onclick="inserirVotos(0)">0</button>
+                </div>
+                <div class="teclado-trio">
+                    <button class="teclado-btn btn-blank" id="btn-blank"  onclick="votarBranco()" >BRANCO</button>
+                    <button class="teclado-btn btn-correct" onclick="corrigirVotos()">CORRIGE</button>
+
+                    <div id="audioButton">
+                        <audio src="audio/voto-realizado.mp3"></audio>
+                        <button class="teclado-btn btn-confirm" id="btn-confirm" onclick="votar()"  >CONFIRMA</button>
+                    </div>
+                      
+                   
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="btn-resultados">
+        <a href="resultados.html">Resultados</a>
+    </div>
+    <div class="btn-voltar">
+        <a href="../index.html">Voltar</a>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
