@@ -41,7 +41,7 @@ function votar() {
 }
 
 
-/* audio ao clicar em confirmar 
+/* audio ao clicar em confirmar */
 
 const buttonPlay = document.getElementById("btn-confirm");
 buttonPlay.addEventListener("click", function () {
@@ -49,7 +49,7 @@ buttonPlay.addEventListener("click", function () {
     audio.play()
 })
 
-*/
+
 
 
 
